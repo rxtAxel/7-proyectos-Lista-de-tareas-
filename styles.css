@@ -1,0 +1,159 @@
+* {
+    font-family: 'Indie Flower', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #c89b5e;
+    background-image:
+        radial-gradient(#a97b45 2px, transparent 2px),
+        radial-gradient(#dcb47c 2px, transparent 2px);
+    background-size: 24px 24px, 17px 17px;
+    background-position: 0 0, 8px 8px;
+}
+
+.marco {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 10px solid #6b4423;
+    border-radius: 6px;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.6em;
+    color: #3b2412;
+    text-align: center;
+}
+
+#fecha {
+    margin: 4px 0 16px;
+    font-size: 1.4em;
+    text-align: center;
+    color: #3b2412;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1.3em;
+    background-color: #fffef2;
+    border: 3px solid #3b2412;
+    border-radius: 8px;
+    outline: none;
+}
+
+.boton {
+    padding: 8px 16px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #3b2412;
+    background-color: #ff6f61;
+    border: 3px solid #3b2412;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #ffa38f;
+}
+
+.boton:active {
+    transform: scale(0.95);
+}
+
+.botones-extra {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.chico {
+    font-size: 1.1em;
+    background-color: #ffe08a;
+}
+
+#contador {
+    margin: 14px 0 6px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #3b2412;
+}
+
+#lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nota {
+    position: relative;
+    width: 170px;
+    min-height: 130px;
+    padding: 28px 14px 14px;
+    font-size: 1.4em;
+    line-height: 1.2;
+    color: #222;
+    word-break: break-word;
+    cursor: pointer;
+    transform: rotate(var(--giro));
+    box-shadow: 4px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nota:hover {
+    transform: rotate(0deg) scale(1.06);
+}
+
+.nota::before {
+    content: '📌';
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nota.hecha {
+    opacity: 0.55;
+}
+
+.nota.hecha span {
+    text-decoration: line-through;
+}
+
+.nota.hecha::after {
+    content: '✅';
+    position: absolute;
+    right: 8px;
+    bottom: 6px;
+}
+
+.borrar {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    padding: 0 4px;
+    font-size: 0.9em;
+    color: #8b1a1a;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.borrar:hover {
+    transform: scale(1.4);
+}

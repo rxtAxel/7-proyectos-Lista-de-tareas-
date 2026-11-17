@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi corcho de tareas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="marco">
+        <h1>📌 Mis tareas</h1>
+        <p id="fecha"></p>
+
+        <form id="formulario" autocomplete="off">
+            <input type="text" id="texto" placeholder="¿qué tienes que hacer?">
+            <button type="submit" class="boton">Pegar</button>
+        </form>
+
+        <div class="botones-extra">
+            <button type="button" id="btn-ordenar" class="boton chico">Ordenar</button>
+            <button type="button" id="btn-limpiar" class="boton chico">Quitar las hechas</button>
+        </div>
+
+        <p id="contador"></p>
+
+        <div id="lista"></div>
+    </div>
+</body>
+</html>
